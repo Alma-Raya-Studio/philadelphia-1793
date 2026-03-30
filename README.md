@@ -1,16 +1,16 @@
-# Carey's Death List: A Structured Dataset of the 1793 Philadelphia Yellow Fever Dead
+# Philadelphia 1793: A Structured Dataset of the Yellow Fever Epidemic
 
-The first structured, machine-readable dataset of the 4,000+ people who died during Philadelphia's 1793 yellow fever epidemic, as recorded by publisher Mathew Carey.
+A structured, machine-readable dataset of the 1793 Philadelphia yellow fever epidemic, synthesizing multiple primary sources including Mathew Carey's death list and the 1791 Biddle Directory.
 
 ## What This Is
 
-In the fall of 1793, yellow fever killed roughly 5,000 people in Philadelphia — then the capital of the United States — out of a population of about 45,000. Publisher Mathew Carey documented the crisis in *A Short Account of the Malignant Fever, Lately Prevalent in Philadelphia* (4th edition, January 1794), which included a 42-page list of the dead on pages 121-159.
+In the fall of 1793, yellow fever killed roughly 5,000 people in Philadelphia, then the capital of the United States, out of a population of about 45,000. Publisher Mathew Carey documented the crisis in *A Short Account of the Malignant Fever, Lately Prevalent in Philadelphia* (4th edition, January 1794), which included a 42-page list of the dead on pages 121-159.
 
 Carey's list names approximately 4,041 individuals with their occupations, family relationships, and social status. It is one of the most detailed mortality records from any American epidemic before the 20th century.
 
-**This project converts that list into structured data** — parsing each entry into discrete fields (surname, first name, occupation, relationship, etc.) and cross-referencing it against the 1791 Biddle Directory to recover street addresses where possible.
+**This project converts those sources into structured data** - parsing each entry into discrete fields (surname, first name, occupation, relationship, etc.) and cross-referencing across sources to recover street addresses where possible.
 
-No comparable structured dataset of this list exists.
+No comparable structured dataset of this epidemic exists.
 
 ## The Data
 
@@ -51,12 +51,12 @@ The core dataset plus address information from the 1791 Biddle Directory.
 | `match_method` | How the match was made (see below) |
 
 **Match methods:**
-- `exact` — Surname + first name + occupation all match
-- `name_only` — Surname + first name match (single match in directory)
-- `relationship` — Entry is "wife/child of X"; X was found in directory
-- `fuzzy (N)` — Fuzzy name match with score N (85-100)
+- `exact` - Surname + first name + occupation all match
+- `name_only` - Surname + first name match (single match in directory)
+- `relationship` - Entry is "wife/child of X"; X was found in directory
+- `fuzzy (N)` - Fuzzy name match with score N (85-100)
 
-**Current match rate: 15.7%** (666 of 4,229 entries). This is expected — many of the dead were women, children, servants, and recent immigrants who did not appear in the 1791 directory. Of entries with both a first name and occupation, 22.9% matched.
+**Current match rate: 15.7%** (666 of 4,229 entries). This is expected - many of the dead were women, children, servants, and recent immigrants who did not appear in the 1791 directory. Of entries with both a first name and occupation, 22.9% matched.
 
 ### JSON Format: `data/carey_death_list.json`
 
@@ -162,10 +162,10 @@ families = df[df["additional_persons"] != ""]
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details. In brief:
 
-- **Report transcription errors**: If you spot a mismatch between the parsed data and the [original pages](https://archive.org/details/2545039R.nlm.nih.gov/page/n126/mode/1up), open an issue.
+- **Report errors**: If you spot a mismatch between the parsed data and an original source, open an issue.
 - **Improve match rates**: Better occupation synonym mapping, name variant handling, or fuzzy matching strategies are welcome.
 - **Add data sources**: Church burial records, Board of Health returns, or other contemporary sources could fill gaps.
-- **Verify entries**: Spot-checking parsed entries against the original page images is the most valuable contribution.
+- **Verify entries**: Spot-checking parsed entries against original source documents is the most valuable contribution.
 
 ## Citation
 
