@@ -171,7 +171,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details. In brief:
 
 If you use this dataset in research, please cite:
 
-> McLaughlin, Jerry. *Philadelphia 1793: A Structured Dataset of the Yellow Fever Epidemic.* Alma Raya Studio, 2026. https://github.com/Alma-Raya-Studio/philadelphia-1793
+> McLaughlin, Gerald. *Philadelphia 1793: A Structured Dataset of the Yellow Fever Epidemic.* Alma Raya Studio, 2026. https://github.com/Alma-Raya-Studio/philadelphia-1793
 
 And the original source:
 
