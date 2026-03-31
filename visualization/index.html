@@ -138,12 +138,23 @@
   }
 
   /* Proportion bar */
+  .proportion-section {
+    margin-top: 8px;
+  }
+
+  .proportion-section .section-sublabel {
+    font-family: var(--font-data);
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+  }
+
   .proportion-bar {
     width: 100%;
-    height: 8px;
+    height: 10px;
     background: var(--border);
-    border-radius: 4px;
-    margin: 10px 0 4px;
+    border-radius: 5px;
+    margin: 4px 0;
     position: relative;
     overflow: hidden;
   }
@@ -153,12 +164,12 @@
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 4px;
-    transition: width 0.6s ease;
+    border-radius: 5px;
+    transition: width 0.8s ease;
   }
 
   .proportion-bar .bar-dead {
-    background: rgba(192, 48, 32, 0.3);
+    background: rgba(192, 48, 32, 0.25);
     z-index: 1;
   }
 
@@ -167,13 +178,22 @@
     z-index: 2;
   }
 
-  .proportion-bar-labels {
+  .proportion-bar-label {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     font-family: var(--font-data);
-    font-size: 10px;
+    font-size: 11px;
+    margin-top: 2px;
+  }
+
+  .proportion-bar-label .bar-label-left {
     color: var(--text-secondary);
-    margin-bottom: 2px;
+  }
+
+  .proportion-bar-label .bar-pct {
+    color: var(--fever-red);
+    font-weight: 500;
   }
 
   /* Context panel (replaces legend) */
@@ -504,13 +524,16 @@
     <span class="stat-label">Locatable on map</span>
     <span class="stat-value">662</span>
   </div>
-  <div class="proportion-bar">
-    <div class="bar-segment bar-dead" style="width: 11.1%"></div>
-    <div class="bar-segment bar-mapped" id="bar-mapped" style="width: 0%"></div>
-  </div>
-  <div class="proportion-bar-labels">
-    <span>0</span>
-    <span>Population: 45,000</span>
+  <div class="proportion-section">
+    <div class="section-sublabel">Deaths as share of city population</div>
+    <div class="proportion-bar">
+      <div class="bar-segment bar-dead" id="bar-dead" style="width: 0%"></div>
+      <div class="bar-segment bar-mapped" id="bar-mapped" style="width: 0%"></div>
+    </div>
+    <div class="proportion-bar-label">
+      <span class="bar-label-left" id="bar-label-text">0 of 45,000</span>
+      <span class="bar-pct" id="bar-pct">0%</span>
+    </div>
   </div>
 </div>
 
@@ -692,11 +715,28 @@ function updateDisplay(maxPeriod) {
   statCumulative.textContent = cumulative.toLocaleString();
   statPeriod.textContent = periodCount.toLocaleString();
 
-  // Update proportion bar - mapped deaths as % of city population (45,000)
+  // Update proportion bar
+  // Scale mapped deaths up to estimated total using the ratio: ~5,000 estimated / 662 mappable
+  const POPULATION = 45000;
+  const ESTIMATED_DEAD = 5000;
+  const TOTAL_MAPPABLE = 662;
+
+  // Cumulative estimated deaths at this point in the epidemic
+  // (mapped deaths represent ~13% of total, so scale up)
+  const estimatedCumulative = Math.round((cumulative / TOTAL_MAPPABLE) * ESTIMATED_DEAD);
+  const estimatedPct = (estimatedCumulative / POPULATION) * 100;
+  const mappedPct = (cumulative / POPULATION) * 100;
+
+  const barDead = document.getElementById("bar-dead");
   const barMapped = document.getElementById("bar-mapped");
-  if (barMapped) {
-    const pct = (cumulative / 45000) * 100;
-    barMapped.style.width = pct.toFixed(2) + "%";
+  const barLabelText = document.getElementById("bar-label-text");
+  const barPctEl = document.getElementById("bar-pct");
+
+  if (barDead && barMapped) {
+    barDead.style.width = estimatedPct.toFixed(1) + "%";
+    barMapped.style.width = mappedPct.toFixed(2) + "%";
+    barLabelText.textContent = "~" + estimatedCumulative.toLocaleString() + " of 45,000";
+    barPctEl.textContent = estimatedPct.toFixed(1) + "%";
   }
 }
 
