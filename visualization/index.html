@@ -137,63 +137,64 @@
     margin: 10px 0;
   }
 
-  /* Proportion bar */
-  .proportion-section {
-    margin-top: 8px;
+  /* Death toll display */
+  .toll-section {
+    margin-top: 4px;
+    text-align: center;
+    padding: 10px 0 4px;
   }
 
-  .proportion-section .section-sublabel {
-    font-family: var(--font-data);
-    font-size: 11px;
+  .toll-ratio {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--fever-red);
+    line-height: 1.1;
+    transition: all 0.6s ease;
+  }
+
+  .toll-label {
+    font-family: var(--font-body);
+    font-size: 13px;
     color: var(--text-secondary);
-    margin-bottom: 6px;
-  }
-
-  .proportion-bar {
-    width: 100%;
-    height: 10px;
-    background: var(--border);
-    border-radius: 5px;
-    margin: 4px 0;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .proportion-bar .bar-segment {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 5px;
-    transition: width 0.8s ease;
-  }
-
-  .proportion-bar .bar-dead {
-    background: rgba(192, 48, 32, 0.25);
-    z-index: 1;
-  }
-
-  .proportion-bar .bar-mapped {
-    background: var(--fever-red);
-    z-index: 2;
-  }
-
-  .proportion-bar-label {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-family: var(--font-data);
-    font-size: 11px;
     margin-top: 2px;
   }
 
-  .proportion-bar-label .bar-label-left {
-    color: var(--text-secondary);
+  .toll-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+    margin: 12px auto 6px;
+    max-width: 200px;
   }
 
-  .proportion-bar-label .bar-pct {
-    color: var(--fever-red);
+  .toll-grid .pip {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: background 0.5s ease;
+  }
+
+  .toll-grid .pip.dead {
+    background: var(--fever-red);
+  }
+
+  .toll-pct {
+    font-family: var(--font-data);
+    font-size: 20px;
     font-weight: 500;
+    color: var(--fever-red);
+    margin-top: 6px;
+    transition: all 0.6s ease;
+  }
+
+  .toll-sublabel {
+    font-family: var(--font-data);
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 2px;
   }
 
   /* Context panel (replaces legend) */
@@ -524,16 +525,12 @@
     <span class="stat-label">Locatable on map</span>
     <span class="stat-value">662</span>
   </div>
-  <div class="proportion-section">
-    <div class="section-sublabel">Deaths as share of city population</div>
-    <div class="proportion-bar">
-      <div class="bar-segment bar-dead" id="bar-dead" style="width: 0%"></div>
-      <div class="bar-segment bar-mapped" id="bar-mapped" style="width: 0%"></div>
-    </div>
-    <div class="proportion-bar-label">
-      <span class="bar-label-left" id="bar-label-text">0 of 45,000</span>
-      <span class="bar-pct" id="bar-pct">0%</span>
-    </div>
+  <div class="toll-section">
+    <div class="toll-ratio" id="toll-ratio">1 in --</div>
+    <div class="toll-label">Philadelphians dead</div>
+    <div class="toll-grid" id="toll-grid"></div>
+    <div class="toll-pct" id="toll-pct">0%</div>
+    <div class="toll-sublabel">of the city</div>
   </div>
 </div>
 
@@ -685,6 +682,28 @@ const statPeriod = document.getElementById("stat-period");
 let playing = false;
 let playInterval = null;
 
+// Initialize pip grid - 45 pips representing the population
+// Each pip = ~1,000 people (45 pips for 45,000)
+const PIPS_TOTAL = 45;
+const tollGrid = document.getElementById("toll-grid");
+for (let i = 0; i < PIPS_TOTAL; i++) {
+  const pip = document.createElement("div");
+  pip.className = "pip";
+  tollGrid.appendChild(pip);
+}
+
+function updateTollGrid(pct) {
+  const pips = tollGrid.querySelectorAll(".pip");
+  const deadCount = Math.round((pct / 100) * PIPS_TOTAL);
+  pips.forEach((pip, i) => {
+    if (i < deadCount) {
+      pip.classList.add("dead");
+    } else {
+      pip.classList.remove("dead");
+    }
+  });
+}
+
 function updateDisplay(maxPeriod) {
   let cumulative = 0;
   let periodCount = 0;
@@ -715,29 +734,28 @@ function updateDisplay(maxPeriod) {
   statCumulative.textContent = cumulative.toLocaleString();
   statPeriod.textContent = periodCount.toLocaleString();
 
-  // Update proportion bar
-  // Scale mapped deaths up to estimated total using the ratio: ~5,000 estimated / 662 mappable
+  // Update death toll display
   const POPULATION = 45000;
   const ESTIMATED_DEAD = 5000;
   const TOTAL_MAPPABLE = 662;
 
-  // Cumulative estimated deaths at this point in the epidemic
-  // (mapped deaths represent ~13% of total, so scale up)
   const estimatedCumulative = Math.round((cumulative / TOTAL_MAPPABLE) * ESTIMATED_DEAD);
   const estimatedPct = (estimatedCumulative / POPULATION) * 100;
-  const mappedPct = (cumulative / POPULATION) * 100;
 
-  const barDead = document.getElementById("bar-dead");
-  const barMapped = document.getElementById("bar-mapped");
-  const barLabelText = document.getElementById("bar-label-text");
-  const barPctEl = document.getElementById("bar-pct");
+  const tollRatio = document.getElementById("toll-ratio");
+  const tollPct = document.getElementById("toll-pct");
 
-  if (barDead && barMapped) {
-    barDead.style.width = estimatedPct.toFixed(1) + "%";
-    barMapped.style.width = mappedPct.toFixed(2) + "%";
-    barLabelText.textContent = "~" + estimatedCumulative.toLocaleString() + " of 45,000";
-    barPctEl.textContent = estimatedPct.toFixed(1) + "%";
+  if (tollRatio && estimatedCumulative > 0) {
+    const ratio = Math.max(1, Math.round(POPULATION / estimatedCumulative));
+    tollRatio.textContent = ratio <= 1 ? "1 in 1" : "1 in " + ratio;
+    tollPct.textContent = estimatedPct.toFixed(1) + "%";
+  } else if (tollRatio) {
+    tollRatio.textContent = "--";
+    tollPct.textContent = "0%";
   }
+
+  // Update pip grid
+  updateTollGrid(estimatedPct);
 }
 
 slider.addEventListener("input", function() {
