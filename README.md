@@ -167,15 +167,25 @@ families = df[df["additional_persons"] != ""]
 
 ## Interactive Map
 
-An interactive visualization of the epidemic is available in `visualization/index.html`. Open it in a browser to see geocoded deaths plotted on a map of Philadelphia with a time-animated slider showing the epidemic's progression week by week.
+An interactive visualization of the epidemic is available in `visualization/index.html`, or live at [alma-raya-studio.github.io/philadelphia-1793/visualization/](https://alma-raya-studio.github.io/philadelphia-1793/visualization/).
 
-The visualization shows 662 deaths that could be geocoded by cross-referencing Carey's death list against the 1791 Biddle Directory. This represents approximately 16% of total documented deaths. The remaining 84% could not be plotted because the victims - disproportionately women, children, servants, free Black Philadelphians, and recent immigrants - did not appear in the directory.
+Two layers animate together as a time slider advances through the epidemic week by week:
 
-### Geocoded Dataset
+- **Deaths** (red): 662 documented deaths geocoded from Carey's list, appearing cumulatively as the epidemic progresses
+- **Population** (gray): ~6,900 residents from the 1791 Biddle Directory, fading out as people flee the city
 
-`data/carey_death_list_geocoded.csv` extends the enriched dataset with latitude and longitude coordinates. Addresses from the 1791 Biddle Directory were mapped from historical street names to their modern equivalents (e.g., High Street to Market Street, Sassafras to Race Street) and geocoded to approximate coordinates within Philadelphia's 1790s street grid.
+The death layer shows approximately 16% of total documented deaths. The remaining 84% could not be plotted because the victims - disproportionately women, children, servants, free Black Philadelphians, and recent immigrants - did not appear in the directory.
 
-See `data/street_name_mapping.json` for the complete historical-to-modern street name mapping.
+### Methodology Note
+
+The **population flight animation is a statistical simulation**, not individual-level data. We know from contemporary accounts that roughly 20,000 of 45,000 residents fled between late August and mid-October 1793, and that the wealthy fled first while the poor and enslaved largely stayed. The visualization models this by assigning each directory resident a flight probability based on their occupation (as a proxy for socioeconomic status) and neighborhood (western blocks were wealthier). Aggregate departure percentages match historical estimates, but individual departures are simulated. See `scripts/06_geocode_population.py` for the full methodology.
+
+### Geocoded Datasets
+
+- `data/carey_death_list_geocoded.csv` - death list with latitude/longitude coordinates
+- `data/population_geocoded.csv` - 1791 directory with coordinates and flight probabilities
+- `data/street_anchors.json` - Nominatim-derived reference coordinates for street alignment
+- `data/street_name_mapping.json` - historical-to-modern street name mapping
 
 ## How to Contribute
 

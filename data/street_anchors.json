@@ -1,0 +1,362 @@
+{
+  "N. Front St.": {
+    "low_num": 1,
+    "high_num": 1,
+    "low_lat": 39.950028,
+    "low_lng": -75.141945,
+    "high_lat": 39.950028,
+    "high_lng": -75.141945
+  },
+  "S. Front St.": {
+    "low_num": 1,
+    "high_num": 1,
+    "low_lat": 39.932448,
+    "low_lng": -75.1461253,
+    "high_lat": 39.932448,
+    "high_lng": -75.1461253
+  },
+  "S. 2nd St.": {
+    "low_num": 1,
+    "high_num": 450,
+    "low_lat": 39.949797,
+    "low_lng": -75.143659,
+    "high_lat": 39.9424522,
+    "high_lng": -75.1456348
+  },
+  "Mulberry St.": {
+    "low_num": 1,
+    "high_num": 1,
+    "low_lat": 39.9545052,
+    "low_lng": -75.1638345,
+    "high_lat": 39.9545052,
+    "high_lng": -75.1638345
+  },
+  "S. 3rd St.": {
+    "low_num": 1,
+    "high_num": 292,
+    "low_lat": 39.945391,
+    "low_lng": -75.1469801,
+    "high_lat": 39.9449321,
+    "high_lng": -75.1469428
+  },
+  "N. Water St.": {
+    "low_num": 1,
+    "high_num": 1,
+    "low_lat": 39.9549361,
+    "low_lng": -75.1402596,
+    "high_lat": 39.9549361,
+    "high_lng": -75.1402596
+  },
+  "N. 4th St.": {
+    "low_num": 2,
+    "high_num": 166,
+    "low_lat": 39.950506,
+    "low_lng": -75.147334,
+    "high_lat": 39.9538827,
+    "high_lng": -75.1465941
+  },
+  "Vine St.": {
+    "low_num": 7,
+    "high_num": 198,
+    "low_lat": 39.9575267,
+    "low_lng": -75.1613501,
+    "high_lat": 39.955501,
+    "high_lng": -75.142391
+  },
+  "Callowhill St.": {
+    "low_num": 2,
+    "high_num": 828,
+    "low_lat": 39.9597181,
+    "low_lng": -75.1629084,
+    "high_lat": 39.9597181,
+    "high_lng": -75.1629084
+  },
+  "S. 4th St.": {
+    "low_num": 2,
+    "high_num": 196,
+    "low_lat": 39.9497276,
+    "low_lng": -75.14729,
+    "high_lat": 39.9474821,
+    "high_lng": -75.1479981
+  },
+  "Lombard St.": {
+    "low_num": 3,
+    "high_num": 3,
+    "low_lat": 39.9432657,
+    "low_lng": -75.1557666,
+    "high_lat": 39.9432657,
+    "high_lng": -75.1557666
+  },
+  "Shippen St.": {
+    "low_num": 3,
+    "high_num": 3,
+    "low_lat": 39.9407594,
+    "low_lng": -75.150915,
+    "high_lat": 39.9407594,
+    "high_lng": -75.150915
+  },
+  "Cherry St.": {
+    "low_num": 2,
+    "high_num": 102,
+    "low_lat": 39.9540041,
+    "low_lng": -75.1521358,
+    "high_lat": 39.9540041,
+    "high_lng": -75.1521358
+  },
+  "Cedar St.": {
+    "low_num": 3,
+    "high_num": 120,
+    "low_lat": 39.9415606,
+    "low_lng": -75.1486387,
+    "high_lat": 39.9409366,
+    "high_lng": -75.1447976
+  },
+  "Dock St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.9463475,
+    "low_lng": -75.143478,
+    "high_lat": 39.9467531,
+    "high_lng": -75.1451888
+  },
+  "Wood St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.958952,
+    "low_lng": -75.1630955,
+    "high_lat": 39.958952,
+    "high_lng": -75.1630955
+  },
+  "S. 5th St.": {
+    "low_num": 2,
+    "high_num": 102,
+    "low_lat": 39.9402854,
+    "low_lng": -75.1510952,
+    "high_lat": 39.9402854,
+    "high_lng": -75.1510952
+  },
+  "New Market St.": {
+    "low_num": 2,
+    "high_num": 102,
+    "low_lat": 39.9642621,
+    "low_lng": -75.1390769,
+    "high_lat": 39.9642621,
+    "high_lng": -75.1390769
+  },
+  "Brown St.": {
+    "low_num": 4,
+    "high_num": 116,
+    "low_lat": 39.9620816,
+    "low_lng": -75.1375909,
+    "high_lat": 39.9626761,
+    "high_lng": -75.1401714
+  },
+  "Queen St.": {
+    "low_num": 4,
+    "high_num": 104,
+    "low_lat": 39.9362468,
+    "low_lng": -75.1434867,
+    "high_lat": 39.936608,
+    "high_lng": -75.1452845
+  },
+  "Catharine St.": {
+    "low_num": 14,
+    "high_num": 114,
+    "low_lat": 39.9368374,
+    "low_lng": -75.1425627,
+    "high_lat": 39.9373046,
+    "high_lng": -75.1454601
+  },
+  "Bread St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.9549602,
+    "low_lng": -75.143512,
+    "high_lat": 39.9549602,
+    "high_lng": -75.143512
+  },
+  "S. 6th St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.9426495,
+    "low_lng": -75.1519982,
+    "high_lat": 39.9304878,
+    "high_lng": -75.1548948
+  },
+  "Gaskell St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.9420453,
+    "low_lng": -75.1482808,
+    "high_lat": 39.9422434,
+    "high_lng": -75.1498634
+  },
+  "Noble St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.9597192,
+    "low_lng": -75.1561923,
+    "high_lat": 39.9591052,
+    "high_lng": -75.1383872
+  },
+  "Quarry St.": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.9531643,
+    "low_lng": -75.142357,
+    "high_lat": 39.9531643,
+    "high_lng": -75.142357
+  },
+  "Black Horse Alley": {
+    "low_num": 1,
+    "high_num": 101,
+    "low_lat": 39.949093,
+    "low_lng": -75.1431002,
+    "high_lat": 39.949084,
+    "high_lng": -75.142438
+  },
+  "Strawberry St.": {
+    "low_num": 40,
+    "high_num": 140,
+    "low_lat": 39.949215,
+    "low_lng": -75.1445107,
+    "high_lat": 39.949215,
+    "high_lng": -75.1445107
+  },
+  "High St.": {
+    "low_num": 100,
+    "low_lat": 39.9495724,
+    "low_lng": -75.1423856,
+    "high_num": 200,
+    "high_lat": 39.9497067,
+    "high_lng": -75.1439264
+  },
+  "Chestnut St.": {
+    "low_num": 100,
+    "low_lat": 39.9480392,
+    "low_lng": -75.1426901,
+    "high_num": 200,
+    "high_lat": 39.9479787,
+    "high_lng": -75.1447658
+  },
+  "Walnut St.": {
+    "low_num": 100,
+    "low_lat": 39.9492136,
+    "low_lng": -75.1631574,
+    "high_num": 200,
+    "high_lat": 39.9467216,
+    "high_lng": -75.1447525
+  },
+  "Spruce St.": {
+    "low_num": 100,
+    "low_lat": 39.945247,
+    "low_lng": -75.1508238,
+    "high_num": 200,
+    "high_lat": 39.945247,
+    "high_lng": -75.1508238
+  },
+  "Pine St.": {
+    "low_num": 100,
+    "low_lat": 39.9428212,
+    "low_lng": -75.143844,
+    "high_num": 200,
+    "high_lat": 39.9449427,
+    "high_lng": -75.16005
+  },
+  "N. 2nd St.": {
+    "low_num": 100,
+    "low_lat": 39.9520868,
+    "low_lng": -75.1434575,
+    "high_num": 200,
+    "high_lat": 39.954598,
+    "high_lng": -75.142846
+  },
+  "N. 3rd St.": {
+    "low_num": 100,
+    "low_lat": 39.9523362,
+    "low_lng": -75.1454001,
+    "high_num": 200,
+    "high_lat": 39.9629451,
+    "high_lng": -75.1429577
+  },
+  "N. 5th St.": {
+    "low_num": 100,
+    "low_lat": 39.9648781,
+    "low_lng": -75.1462926,
+    "high_num": 200,
+    "high_lat": 39.9626864,
+    "high_lng": -75.1466387
+  },
+  "N. 6th St.": {
+    "low_num": 100,
+    "low_lat": 39.9565209,
+    "low_lng": -75.149084,
+    "high_num": 200,
+    "high_lat": 39.9565209,
+    "high_lng": -75.149084
+  },
+  "N. 7th St.": {
+    "low_num": 50,
+    "low_lat": 39.9519528,
+    "low_lng": -75.1517692,
+    "high_num": 100,
+    "high_lat": 39.9544379,
+    "high_lng": -75.1512311
+  },
+  "N. 8th St.": {
+    "low_num": 50,
+    "low_lat": 39.9598942,
+    "low_lng": -75.1518413,
+    "high_num": 100,
+    "high_lat": 39.9598942,
+    "high_lng": -75.1518413
+  },
+  "N. 9th St.": {
+    "low_num": 50,
+    "low_lat": 39.9602666,
+    "low_lng": -75.1532104,
+    "high_num": 100,
+    "high_lat": 39.9573721,
+    "high_lng": -75.1538328
+  },
+  "Sassafras St.": {
+    "low_num": 100,
+    "low_lat": 39.9554015,
+    "low_lng": -75.1558944,
+    "high_num": 200,
+    "high_lat": 39.9541147,
+    "high_lng": -75.1456379
+  },
+  "S. Water St.": {
+    "low_num": 50,
+    "low_lat": 39.9344219,
+    "low_lng": -75.1445645,
+    "high_num": 100,
+    "high_lat": 39.9344219,
+    "high_lng": -75.1445645
+  },
+  "Swanson St.": {
+    "low_num": 100,
+    "low_lat": 39.9356801,
+    "low_lng": -75.1432756,
+    "high_num": 200,
+    "high_lat": 39.9356801,
+    "high_lng": -75.1432756
+  },
+  "S. 7th St.": {
+    "low_num": 50,
+    "low_lat": 39.9308227,
+    "low_lng": -75.1564219,
+    "high_num": 100,
+    "high_lat": 39.9489151,
+    "high_lng": -75.1511037
+  },
+  "S. 8th St.": {
+    "low_num": 50,
+    "low_lat": 39.9319629,
+    "low_lng": -75.1577728,
+    "high_num": 100,
+    "high_lat": 39.9319629,
+    "high_lng": -75.1577728
+  }
+}

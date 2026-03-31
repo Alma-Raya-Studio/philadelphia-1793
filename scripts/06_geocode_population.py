@@ -8,6 +8,22 @@ Output: data/population_geocoded.csv
 Reuses geocoding functions from 05_geocode_addresses.py.
 Assigns a flight_probability (0-1) to each entry based on occupation
 and location, modeling who fled the 1793 epidemic and who stayed.
+
+METHODOLOGY NOTE:
+The flight_probability is a STATISTICAL MODEL, not individual-level data.
+We do not have records of who specifically fled and when. What we know:
+- ~20,000 of ~45,000 residents fled between late August and mid-October 1793
+- The wealthy and well-connected fled first (documented in contemporary accounts)
+- Government officials fled in early-to-mid September
+- The poor, enslaved, and free Black community largely stayed
+- Richard Allen and Absalom Jones organized Black Philadelphians to nurse the sick
+
+The flight_probability score models these patterns using occupation as a proxy
+for socioeconomic status and longitude as a proxy for neighborhood wealth
+(western blocks were wealthier, eastern waterfront blocks were poorer).
+The visualization assigns departure periods proportionally so that the
+aggregate percentages match historical estimates, but individual departures
+are simulated, not documented.
 """
 
 import json
