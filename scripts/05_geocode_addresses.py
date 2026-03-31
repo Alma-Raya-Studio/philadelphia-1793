@@ -26,21 +26,21 @@ REPORT_FILE = ROOT / "data" / "geocoding_report.json"
 
 # Bounding box for 1793 settled Philadelphia
 BOUNDS = {
-    "lat_min": 39.935,
+    "lat_min": 39.930,
     "lat_max": 39.965,
     "lng_min": -75.170,
     "lng_max": -75.135,
 }
 
 # Market Street latitude - divides N/S addresses on numbered streets
-MARKET_LAT = 39.9525
+MARKET_LAT = 39.9508
 
 # Delaware River longitude - house numbers on E-W streets increase going west
-DELAWARE_LNG = -75.1390
+DELAWARE_LNG = -75.1393
 
-# Approximate degrees per block
-LAT_PER_BLOCK = 0.0020   # ~220m per block N-S
-LNG_PER_BLOCK = 0.0025   # ~210m per block E-W
+# Approximate degrees per block (calibrated against modern basemap)
+LAT_PER_BLOCK = 0.0018   # ~200m per block N-S
+LNG_PER_BLOCK = 0.0021   # ~175m per block E-W
 
 # House numbers per block (1790s Philadelphia used ~100 per block)
 NUMBERS_PER_BLOCK = 100

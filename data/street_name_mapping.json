@@ -1,180 +1,817 @@
 {
   "_description": "Maps 1790s Philadelphia street names to modern equivalents. Used by 05_geocode_addresses.py.",
   "_note": "Most streets in the 1790s grid retained their names. Key renames: High->Market, Mulberry->Arch, Sassafras->Race, Cedar->South, Shippen->Bainbridge.",
-
   "streets": {
-    "High St.": {"modern_name": "Market Street", "type": "ew", "latitude": 39.9525},
-    "Market St.": {"modern_name": "Market Street", "type": "ew", "latitude": 39.9525},
-    "Chestnut St.": {"modern_name": "Chestnut Street", "type": "ew", "latitude": 39.9505},
-    "Walnut St.": {"modern_name": "Walnut Street", "type": "ew", "latitude": 39.9485},
-    "Spruce St.": {"modern_name": "Spruce Street", "type": "ew", "latitude": 39.9465},
-    "Pine St.": {"modern_name": "Pine Street", "type": "ew", "latitude": 39.9445},
-    "Lombard St.": {"modern_name": "Lombard Street", "type": "ew", "latitude": 39.9425},
-    "Cedar St.": {"modern_name": "South Street", "type": "ew", "latitude": 39.9405},
-    "South St.": {"modern_name": "South Street", "type": "ew", "latitude": 39.9405},
-    "Catharine St.": {"modern_name": "Catharine Street", "type": "ew", "latitude": 39.9385},
-    "Shippen St.": {"modern_name": "Bainbridge Street", "type": "ew", "latitude": 39.9365},
-    "Mulberry St.": {"modern_name": "Arch Street", "type": "ew", "latitude": 39.9545},
-    "Arch St.": {"modern_name": "Arch Street", "type": "ew", "latitude": 39.9545},
-    "Sassafras St.": {"modern_name": "Race Street", "type": "ew", "latitude": 39.9565},
-    "Race St.": {"modern_name": "Race Street", "type": "ew", "latitude": 39.9565},
-    "Vine St.": {"modern_name": "Vine Street", "type": "ew", "latitude": 39.9585},
-    "Cherry St.": {"modern_name": "Cherry Street", "type": "ew", "latitude": 39.9515},
-    "Callowhill St.": {"modern_name": "Callowhill Street", "type": "ew", "latitude": 39.9605},
-    "New Market St.": {"modern_name": "New Market Street", "type": "ns", "longitude": -75.1430},
-    "Dock St.": {"modern_name": "Dock Street", "type": "ew", "latitude": 39.9490},
-    "Elm St.": {"modern_name": "Elm Street", "type": "ew", "latitude": 39.9410},
-    "Plumb St.": {"modern_name": "Plumb Street", "type": "ew", "latitude": 39.9415},
-
-    "Water St.": {"modern_name": "Water Street", "type": "ns", "longitude": -75.1395},
-    "N. Water St.": {"modern_name": "N Water Street", "type": "ns", "longitude": -75.1395},
-    "S. Water St.": {"modern_name": "S Water Street", "type": "ns", "longitude": -75.1395},
-    "Front St.": {"modern_name": "Front Street", "type": "ns", "longitude": -75.1415},
-    "N. Front St.": {"modern_name": "N Front Street", "type": "ns", "longitude": -75.1415},
-    "S. Front St.": {"modern_name": "S Front Street", "type": "ns", "longitude": -75.1415},
-    "Swanson St.": {"modern_name": "Swanson Street", "type": "ns", "longitude": -75.1380},
-    "N. Broad St.": {"modern_name": "N Broad Street", "type": "ns", "longitude": -75.1640},
-    "Broad St.": {"modern_name": "Broad Street", "type": "ns", "longitude": -75.1640},
-
-    "N. 2nd St.": {"modern_name": "N 2nd Street", "type": "ns", "longitude": -75.1440},
-    "S. 2nd St.": {"modern_name": "S 2nd Street", "type": "ns", "longitude": -75.1440},
-    "N. 3rd St.": {"modern_name": "N 3rd Street", "type": "ns", "longitude": -75.1465},
-    "S. 3rd St.": {"modern_name": "S 3rd Street", "type": "ns", "longitude": -75.1465},
-    "N. 4th St.": {"modern_name": "N 4th Street", "type": "ns", "longitude": -75.1490},
-    "S. 4th St.": {"modern_name": "S 4th Street", "type": "ns", "longitude": -75.1490},
-    "N. 5th St.": {"modern_name": "N 5th Street", "type": "ns", "longitude": -75.1515},
-    "S. 5th St.": {"modern_name": "S 5th Street", "type": "ns", "longitude": -75.1515},
-    "N. 6th St.": {"modern_name": "N 6th Street", "type": "ns", "longitude": -75.1540},
-    "S. 6th St.": {"modern_name": "S 6th Street", "type": "ns", "longitude": -75.1540},
-    "N. 7th St.": {"modern_name": "N 7th Street", "type": "ns", "longitude": -75.1565},
-    "N. 8th St.": {"modern_name": "N 8th Street", "type": "ns", "longitude": -75.1590},
-    "N. 9th St.": {"modern_name": "N 9th Street", "type": "ns", "longitude": -75.1615},
-
-    "Penn St.": {"modern_name": "Penn Street", "type": "ns", "longitude": -75.1410},
-    "George St.": {"modern_name": "George Street", "type": "ew", "latitude": 39.9395},
-    "Union St.": {"modern_name": "Union Street", "type": "ew", "latitude": 39.9435},
-    "Crown St.": {"modern_name": "Crown Street", "type": "ew", "latitude": 39.9400},
-    "Pear St.": {"modern_name": "Pear Street", "type": "ew", "latitude": 39.9500},
-    "Wood St.": {"modern_name": "Wood Street", "type": "ew", "latitude": 39.9510},
-    "Bread St.": {"modern_name": "Bread Street", "type": "ns", "longitude": -75.1455},
-    "Ann St.": {"modern_name": "Ann Street", "type": "ew", "latitude": 39.9535},
-    "Margaretta St.": {"modern_name": "Margaretta Street", "type": "ew", "latitude": 39.9590},
-    "Kunckell St.": {"modern_name": "Kunckle Street", "type": "ew", "latitude": 39.9410},
-    "Duke St.": {"modern_name": "Duke Street", "type": "ns", "longitude": -75.1480},
-    "Budd St.": {"modern_name": "Budd Street", "type": "ew", "latitude": 39.9540},
-    "Story St.": {"modern_name": "Story Street", "type": "ew", "latitude": 39.9400},
-    "Brown St.": {"modern_name": "Brown Street", "type": "ew", "latitude": 39.9620},
-    "Green St.": {"modern_name": "Green Street", "type": "ew", "latitude": 39.9630},
-    "Vernon St.": {"modern_name": "Vernon Street", "type": "ew", "latitude": 39.9560},
-    "Almond St.": {"modern_name": "Almond Street", "type": "ew", "latitude": 39.9390},
-    "St. John's St.": {"modern_name": "St. John Street", "type": "ns", "longitude": -75.1410},
-    "Coates' St.": {"modern_name": "Coates Street", "type": "ew", "latitude": 39.9610},
-    "Queen St.": {"modern_name": "Queen Street", "type": "ew", "latitude": 39.9395},
-    "Branch St.": {"modern_name": "Branch Street", "type": "ew", "latitude": 39.9410},
-    "Little Water St.": {"modern_name": "Little Water Street", "type": "ns", "longitude": -75.1400},
-    "Noble St.": {"modern_name": "Noble Street", "type": "ew", "latitude": 39.9615},
-    "Charlotte St.": {"modern_name": "Charlotte Street", "type": "ew", "latitude": 39.9535},
-    "Pruan St.": {"modern_name": "Prune Street", "type": "ew", "latitude": 39.9460},
-    "S. 8th St.": {"modern_name": "S 8th Street", "type": "ns", "longitude": -75.1590},
-    "S. 7th St.": {"modern_name": "S 7th Street", "type": "ns", "longitude": -75.1565},
-    "S. 9th St.": {"modern_name": "S 9th Street", "type": "ns", "longitude": -75.1615},
-    "N. 10th St.": {"modern_name": "N 10th Street", "type": "ns", "longitude": -75.1640},
-    "N. 12th St.": {"modern_name": "N 12th Street", "type": "ns", "longitude": -75.1690},
-    "Gaskell St.": {"modern_name": "Gaskill Street", "type": "ew", "latitude": 39.9398},
-    "Quarry St.": {"modern_name": "Quarry Street", "type": "ew", "latitude": 39.9555},
-    "Oak St.": {"modern_name": "Oak Street", "type": "ew", "latitude": 39.9420},
-    "Tammany St.": {"modern_name": "Tammany Street", "type": "ew", "latitude": 39.9570},
-    "St. Tammany St.": {"modern_name": "Tammany Street", "type": "ew", "latitude": 39.9570},
-    "Carpenter St.": {"modern_name": "Carpenter Street", "type": "ew", "latitude": 39.9375},
-    "Brooke St.": {"modern_name": "Brooke Street", "type": "ew", "latitude": 39.9395},
-    "Ashton St.": {"modern_name": "Ashton Street", "type": "ew", "latitude": 39.9560},
-    "Minor St.": {"modern_name": "Minor Street", "type": "ew", "latitude": 39.9515},
-    "Strawberry St.": {"modern_name": "Strawberry Street", "type": "ns", "longitude": -75.1475},
-    "German St.": {"modern_name": "Germantown Avenue", "type": "ns", "longitude": -75.1560}
+    "High St.": {
+      "modern_name": "Market Street",
+      "type": "ew",
+      "latitude": 39.9508
+    },
+    "Market St.": {
+      "modern_name": "Market Street",
+      "type": "ew",
+      "latitude": 39.9508
+    },
+    "Chestnut St.": {
+      "modern_name": "Chestnut Street",
+      "type": "ew",
+      "latitude": 39.9484
+    },
+    "Walnut St.": {
+      "modern_name": "Walnut Street",
+      "type": "ew",
+      "latitude": 39.9465
+    },
+    "Spruce St.": {
+      "modern_name": "Spruce Street",
+      "type": "ew",
+      "latitude": 39.9445
+    },
+    "Pine St.": {
+      "modern_name": "Pine Street",
+      "type": "ew",
+      "latitude": 39.9425
+    },
+    "Lombard St.": {
+      "modern_name": "Lombard Street",
+      "type": "ew",
+      "latitude": 39.9405
+    },
+    "Cedar St.": {
+      "modern_name": "South Street",
+      "type": "ew",
+      "latitude": 39.9385
+    },
+    "South St.": {
+      "modern_name": "South Street",
+      "type": "ew",
+      "latitude": 39.9385
+    },
+    "Catharine St.": {
+      "modern_name": "Catharine Street",
+      "type": "ew",
+      "latitude": 39.9365
+    },
+    "Shippen St.": {
+      "modern_name": "Bainbridge Street",
+      "type": "ew",
+      "latitude": 39.9345
+    },
+    "Mulberry St.": {
+      "modern_name": "Arch Street",
+      "type": "ew",
+      "latitude": 39.9521
+    },
+    "Arch St.": {
+      "modern_name": "Arch Street",
+      "type": "ew",
+      "latitude": 39.9521
+    },
+    "Sassafras St.": {
+      "modern_name": "Race Street",
+      "type": "ew",
+      "latitude": 39.9539
+    },
+    "Race St.": {
+      "modern_name": "Race Street",
+      "type": "ew",
+      "latitude": 39.9539
+    },
+    "Vine St.": {
+      "modern_name": "Vine Street",
+      "type": "ew",
+      "latitude": 39.9557
+    },
+    "Cherry St.": {
+      "modern_name": "Cherry Street",
+      "type": "ew",
+      "latitude": 39.9495
+    },
+    "Callowhill St.": {
+      "modern_name": "Callowhill Street",
+      "type": "ew",
+      "latitude": 39.9581
+    },
+    "New Market St.": {
+      "modern_name": "New Market Street",
+      "type": "ns",
+      "longitude": -75.1427
+    },
+    "Dock St.": {
+      "modern_name": "Dock Street",
+      "type": "ew",
+      "latitude": 39.947
+    },
+    "Elm St.": {
+      "modern_name": "Elm Street",
+      "type": "ew",
+      "latitude": 39.939
+    },
+    "Plumb St.": {
+      "modern_name": "Plumb Street",
+      "type": "ew",
+      "latitude": 39.9395
+    },
+    "Water St.": {
+      "modern_name": "Water Street",
+      "type": "ns",
+      "longitude": -75.1398
+    },
+    "N. Water St.": {
+      "modern_name": "N Water Street",
+      "type": "ns",
+      "longitude": -75.1398
+    },
+    "S. Water St.": {
+      "modern_name": "S Water Street",
+      "type": "ns",
+      "longitude": -75.1398
+    },
+    "Front St.": {
+      "modern_name": "Front Street",
+      "type": "ns",
+      "longitude": -75.1416
+    },
+    "N. Front St.": {
+      "modern_name": "N Front Street",
+      "type": "ns",
+      "longitude": -75.1416
+    },
+    "S. Front St.": {
+      "modern_name": "S Front Street",
+      "type": "ns",
+      "longitude": -75.1416
+    },
+    "Swanson St.": {
+      "modern_name": "Swanson Street",
+      "type": "ns",
+      "longitude": -75.1383
+    },
+    "N. Broad St.": {
+      "modern_name": "N Broad Street",
+      "type": "ns",
+      "longitude": -75.1605
+    },
+    "Broad St.": {
+      "modern_name": "Broad Street",
+      "type": "ns",
+      "longitude": -75.1605
+    },
+    "N. 2nd St.": {
+      "modern_name": "N 2nd Street",
+      "type": "ns",
+      "longitude": -75.1437
+    },
+    "S. 2nd St.": {
+      "modern_name": "S 2nd Street",
+      "type": "ns",
+      "longitude": -75.1437
+    },
+    "N. 3rd St.": {
+      "modern_name": "N 3rd Street",
+      "type": "ns",
+      "longitude": -75.1458
+    },
+    "S. 3rd St.": {
+      "modern_name": "S 3rd Street",
+      "type": "ns",
+      "longitude": -75.1458
+    },
+    "N. 4th St.": {
+      "modern_name": "N 4th Street",
+      "type": "ns",
+      "longitude": -75.1479
+    },
+    "S. 4th St.": {
+      "modern_name": "S 4th Street",
+      "type": "ns",
+      "longitude": -75.1479
+    },
+    "N. 5th St.": {
+      "modern_name": "N 5th Street",
+      "type": "ns",
+      "longitude": -75.15
+    },
+    "S. 5th St.": {
+      "modern_name": "S 5th Street",
+      "type": "ns",
+      "longitude": -75.15
+    },
+    "N. 6th St.": {
+      "modern_name": "N 6th Street",
+      "type": "ns",
+      "longitude": -75.1521
+    },
+    "S. 6th St.": {
+      "modern_name": "S 6th Street",
+      "type": "ns",
+      "longitude": -75.1521
+    },
+    "N. 7th St.": {
+      "modern_name": "N 7th Street",
+      "type": "ns",
+      "longitude": -75.1542
+    },
+    "N. 8th St.": {
+      "modern_name": "N 8th Street",
+      "type": "ns",
+      "longitude": -75.1563
+    },
+    "N. 9th St.": {
+      "modern_name": "N 9th Street",
+      "type": "ns",
+      "longitude": -75.1584
+    },
+    "Penn St.": {
+      "modern_name": "Penn Street",
+      "type": "ns",
+      "longitude": -75.1413
+    },
+    "George St.": {
+      "modern_name": "George Street",
+      "type": "ew",
+      "latitude": 39.9375
+    },
+    "Union St.": {
+      "modern_name": "Union Street",
+      "type": "ew",
+      "latitude": 39.9415
+    },
+    "Crown St.": {
+      "modern_name": "Crown Street",
+      "type": "ew",
+      "latitude": 39.938
+    },
+    "Pear St.": {
+      "modern_name": "Pear Street",
+      "type": "ew",
+      "latitude": 39.948
+    },
+    "Wood St.": {
+      "modern_name": "Wood Street",
+      "type": "ew",
+      "latitude": 39.949
+    },
+    "Bread St.": {
+      "modern_name": "Bread Street",
+      "type": "ns",
+      "longitude": -75.1448
+    },
+    "Ann St.": {
+      "modern_name": "Ann Street",
+      "type": "ew",
+      "latitude": 39.9515
+    },
+    "Margaretta St.": {
+      "modern_name": "Margaretta Street",
+      "type": "ew",
+      "latitude": 39.9566
+    },
+    "Kunckell St.": {
+      "modern_name": "Kunckle Street",
+      "type": "ew",
+      "latitude": 39.939
+    },
+    "Duke St.": {
+      "modern_name": "Duke Street",
+      "type": "ns",
+      "longitude": -75.1469
+    },
+    "Budd St.": {
+      "modern_name": "Budd Street",
+      "type": "ew",
+      "latitude": 39.952
+    },
+    "Story St.": {
+      "modern_name": "Story Street",
+      "type": "ew",
+      "latitude": 39.938
+    },
+    "Brown St.": {
+      "modern_name": "Brown Street",
+      "type": "ew",
+      "latitude": 39.9596
+    },
+    "Green St.": {
+      "modern_name": "Green Street",
+      "type": "ew",
+      "latitude": 39.9606
+    },
+    "Vernon St.": {
+      "modern_name": "Vernon Street",
+      "type": "ew",
+      "latitude": 39.9536
+    },
+    "Almond St.": {
+      "modern_name": "Almond Street",
+      "type": "ew",
+      "latitude": 39.937
+    },
+    "St. John's St.": {
+      "modern_name": "St. John Street",
+      "type": "ns",
+      "longitude": -75.1413
+    },
+    "Coates' St.": {
+      "modern_name": "Coates Street",
+      "type": "ew",
+      "latitude": 39.9586
+    },
+    "Queen St.": {
+      "modern_name": "Queen Street",
+      "type": "ew",
+      "latitude": 39.9375
+    },
+    "Branch St.": {
+      "modern_name": "Branch Street",
+      "type": "ew",
+      "latitude": 39.939
+    },
+    "Little Water St.": {
+      "modern_name": "Little Water Street",
+      "type": "ns",
+      "longitude": -75.1403
+    },
+    "Noble St.": {
+      "modern_name": "Noble Street",
+      "type": "ew",
+      "latitude": 39.9591
+    },
+    "Charlotte St.": {
+      "modern_name": "Charlotte Street",
+      "type": "ew",
+      "latitude": 39.9515
+    },
+    "Pruan St.": {
+      "modern_name": "Prune Street",
+      "type": "ew",
+      "latitude": 39.944
+    },
+    "S. 8th St.": {
+      "modern_name": "S 8th Street",
+      "type": "ns",
+      "longitude": -75.1563
+    },
+    "S. 7th St.": {
+      "modern_name": "S 7th Street",
+      "type": "ns",
+      "longitude": -75.1542
+    },
+    "S. 9th St.": {
+      "modern_name": "S 9th Street",
+      "type": "ns",
+      "longitude": -75.1584
+    },
+    "N. 10th St.": {
+      "modern_name": "N 10th Street",
+      "type": "ns",
+      "longitude": -75.1605
+    },
+    "N. 12th St.": {
+      "modern_name": "N 12th Street",
+      "type": "ns",
+      "longitude": -75.1647
+    },
+    "Gaskell St.": {
+      "modern_name": "Gaskill Street",
+      "type": "ew",
+      "latitude": 39.9378
+    },
+    "Quarry St.": {
+      "modern_name": "Quarry Street",
+      "type": "ew",
+      "latitude": 39.9531
+    },
+    "Oak St.": {
+      "modern_name": "Oak Street",
+      "type": "ew",
+      "latitude": 39.94
+    },
+    "Tammany St.": {
+      "modern_name": "Tammany Street",
+      "type": "ew",
+      "latitude": 39.9546
+    },
+    "St. Tammany St.": {
+      "modern_name": "Tammany Street",
+      "type": "ew",
+      "latitude": 39.9546
+    },
+    "Carpenter St.": {
+      "modern_name": "Carpenter Street",
+      "type": "ew",
+      "latitude": 39.9355
+    },
+    "Brooke St.": {
+      "modern_name": "Brooke Street",
+      "type": "ew",
+      "latitude": 39.9375
+    },
+    "Ashton St.": {
+      "modern_name": "Ashton Street",
+      "type": "ew",
+      "latitude": 39.9536
+    },
+    "Minor St.": {
+      "modern_name": "Minor Street",
+      "type": "ew",
+      "latitude": 39.9495
+    },
+    "Strawberry St.": {
+      "modern_name": "Strawberry Street",
+      "type": "ns",
+      "longitude": -75.1465
+    },
+    "German St.": {
+      "modern_name": "Germantown Avenue",
+      "type": "ns",
+      "longitude": -75.1542
+    }
   },
-
   "alleys": {
-    "Pewter Platter Alley": {"latitude": 39.9430, "longitude": -75.1445, "note": "Near 2nd and Lombard"},
-    "Elfrith's Alley": {"latitude": 39.9533, "longitude": -75.1425, "note": "Between Front and 2nd near Arch"},
-    "Keys' Alley": {"latitude": 39.9510, "longitude": -75.1455, "note": "Between 2nd and 3rd near Chestnut"},
-    "Strawberry Alley": {"latitude": 39.9510, "longitude": -75.1475, "note": "Between 3rd and 4th near Chestnut"},
-    "Cypress Alley": {"latitude": 39.9450, "longitude": -75.1460, "note": "Between 2nd and 3rd south of Pine"},
-    "Appletree Alley": {"latitude": 39.9555, "longitude": -75.1465, "note": "Between 2nd and 3rd near Race"},
-    "Lilly Alley": {"latitude": 39.9510, "longitude": -75.1435, "note": "Near 2nd and Chestnut"},
-    "Sugar Alley": {"latitude": 39.9500, "longitude": -75.1480, "note": "Between 3rd and 4th near Walnut"},
-    "Relief Alley": {"latitude": 39.9440, "longitude": -75.1470, "note": "Between 2nd and 3rd near Pine"},
-    "Black Horse Alley": {"latitude": 39.9520, "longitude": -75.1475, "note": "Between 3rd and 4th near Market"},
-    "Taper Alley": {"latitude": 39.9445, "longitude": -75.1450, "note": "Near 2nd and Pine"},
-    "Sassafras Alley": {"latitude": 39.9565, "longitude": -75.1450, "note": "Near 2nd and Race"},
-    "Gray's Alley": {"latitude": 39.9520, "longitude": -75.1430, "note": "Near Front and Market"},
-    "Mifflin's Alley": {"latitude": 39.9500, "longitude": -75.1450, "note": "Near 2nd and Walnut"},
-    "Norris' Alley": {"latitude": 39.9510, "longitude": -75.1490, "note": "Between 4th and 5th near Chestnut"},
-    "Coates' Alley": {"latitude": 39.9540, "longitude": -75.1455, "note": "Near 2nd and Arch"},
-    "Coombs' Alley": {"latitude": 39.9505, "longitude": -75.1470, "note": "Between 3rd and 4th near Chestnut"},
-    "Cresson's Alley": {"latitude": 39.9530, "longitude": -75.1450, "note": "Near 2nd and Market"},
-    "Greenleaf's Alley": {"latitude": 39.9500, "longitude": -75.1440, "note": "Between Front and 2nd near Walnut"},
-    "Scheibell's Alley": {"latitude": 39.9490, "longitude": -75.1460, "note": "Between 2nd and 3rd near Walnut"},
-    "Stamper's Alley": {"latitude": 39.9510, "longitude": -75.1485, "note": "Between 3rd and 4th near Chestnut"},
-    "Steinmetz's Alley": {"latitude": 39.9530, "longitude": -75.1490, "note": "Between 4th and 5th near Market"},
-    "Cannon's Alley": {"latitude": 39.9520, "longitude": -75.1445, "note": "Near 2nd and Market"},
-    "Carter's Alley": {"latitude": 39.9495, "longitude": -75.1430, "note": "Near Front and Walnut"},
-    "Chancery Lane": {"latitude": 39.9520, "longitude": -75.1460, "note": "Between 2nd and 3rd near Market"},
-    "Elbow Lane": {"latitude": 39.9505, "longitude": -75.1425, "note": "Near Front and Chestnut"},
-    "McCullough's Alley": {"latitude": 39.9540, "longitude": -75.1470, "note": "Between 3rd and 4th near Arch"},
-    "North Alley": {"latitude": 39.9550, "longitude": -75.1450, "note": "Between 2nd and 3rd north of Arch"},
-    "South Alley": {"latitude": 39.9440, "longitude": -75.1455, "note": "Between 2nd and 3rd south of Pine"},
-    "Church Alley": {"latitude": 39.9505, "longitude": -75.1430, "note": "Near Front and Chestnut"},
-    "Sterling Alley": {"latitude": 39.9520, "longitude": -75.1470, "note": "Between 3rd and 4th near Market"},
-    "Tallman's Alley": {"latitude": 39.9530, "longitude": -75.1460, "note": "Near 2nd and Market"},
-    "Fearis' Alley": {"latitude": 39.9490, "longitude": -75.1475, "note": "Between 3rd and 4th near Walnut"},
-    "Hoffman's Alley": {"latitude": 39.9520, "longitude": -75.1440, "note": "Near 2nd and Market"},
-    "Lownes' Alley": {"latitude": 39.9510, "longitude": -75.1460, "note": "Between 2nd and 3rd near Chestnut"},
-    "Petticoat Alley": {"latitude": 39.9530, "longitude": -75.1440, "note": "Near 2nd and Market"},
-    "Patton's Alley": {"latitude": 39.9500, "longitude": -75.1455, "note": "Near 2nd and Walnut"},
-    "Shepherd's Alley": {"latitude": 39.9515, "longitude": -75.1480, "note": "Between 3rd and 4th near Chestnut"},
-    "Etris' Alley": {"latitude": 39.9535, "longitude": -75.1475, "note": "Between 3rd and 4th near Arch"},
-    "Groff's Alley": {"latitude": 39.9495, "longitude": -75.1445, "note": "Near 2nd and Walnut"},
-    "Wells' Alley": {"latitude": 39.9540, "longitude": -75.1465, "note": "Near 3rd and Arch"},
-    "Baker's Alley": {"latitude": 39.9490, "longitude": -75.1440, "note": "Near Front and Walnut"},
-    "Cauffman's Alley": {"latitude": 39.9530, "longitude": -75.1435, "note": "Near Front and Market"},
-    "Willing's Alley": {"latitude": 39.9495, "longitude": -75.1425, "note": "Near Front and Walnut"},
-    "Biddle's Alley": {"latitude": 39.9510, "longitude": -75.1465, "note": "Between 2nd and 3rd near Chestnut"},
-    "Fetter Lane": {"latitude": 39.9505, "longitude": -75.1490, "note": "Between 4th and 5th near Chestnut"},
-    "Button-wood Lane": {"latitude": 39.9600, "longitude": -75.1470, "note": "Near 3rd and Callowhill"},
-    "Long Lane": {"latitude": 39.9560, "longitude": -75.1480, "note": "Between 3rd and 4th near Race"},
-    "Poplar Lane": {"latitude": 39.9625, "longitude": -75.1465, "note": "Between 2nd and 3rd north of Vine"},
-    "Hickory Lane": {"latitude": 39.9445, "longitude": -75.1465, "note": "Near 2nd and Pine"},
-    "Black Alley": {"latitude": 39.9510, "longitude": -75.1440, "note": "Near 2nd and Chestnut"},
-    "Rose Alley": {"latitude": 39.9520, "longitude": -75.1455, "note": "Near 2nd and Market"}
+    "Pewter Platter Alley": {
+      "latitude": 39.941,
+      "longitude": -75.1437,
+      "note": "Near 2nd and Lombard"
+    },
+    "Elfrith's Alley": {
+      "latitude": 39.9513,
+      "longitude": -75.1417,
+      "note": "Between Front and 2nd near Arch"
+    },
+    "Keys' Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1447,
+      "note": "Between 2nd and 3rd near Chestnut"
+    },
+    "Strawberry Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1467,
+      "note": "Between 3rd and 4th near Chestnut"
+    },
+    "Cypress Alley": {
+      "latitude": 39.943,
+      "longitude": -75.1452,
+      "note": "Between 2nd and 3rd south of Pine"
+    },
+    "Appletree Alley": {
+      "latitude": 39.9535,
+      "longitude": -75.1457,
+      "note": "Between 2nd and 3rd near Race"
+    },
+    "Lilly Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1427,
+      "note": "Near 2nd and Chestnut"
+    },
+    "Sugar Alley": {
+      "latitude": 39.948,
+      "longitude": -75.1472,
+      "note": "Between 3rd and 4th near Walnut"
+    },
+    "Relief Alley": {
+      "latitude": 39.942,
+      "longitude": -75.1462,
+      "note": "Between 2nd and 3rd near Pine"
+    },
+    "Black Horse Alley": {
+      "latitude": 39.95,
+      "longitude": -75.1467,
+      "note": "Between 3rd and 4th near Market"
+    },
+    "Taper Alley": {
+      "latitude": 39.9425,
+      "longitude": -75.1442,
+      "note": "Near 2nd and Pine"
+    },
+    "Sassafras Alley": {
+      "latitude": 39.9545,
+      "longitude": -75.1442,
+      "note": "Near 2nd and Race"
+    },
+    "Gray's Alley": {
+      "latitude": 39.95,
+      "longitude": -75.1422,
+      "note": "Near Front and Market"
+    },
+    "Mifflin's Alley": {
+      "latitude": 39.948,
+      "longitude": -75.1442,
+      "note": "Near 2nd and Walnut"
+    },
+    "Norris' Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1482,
+      "note": "Between 4th and 5th near Chestnut"
+    },
+    "Coates' Alley": {
+      "latitude": 39.952,
+      "longitude": -75.1447,
+      "note": "Near 2nd and Arch"
+    },
+    "Coombs' Alley": {
+      "latitude": 39.9485,
+      "longitude": -75.1462,
+      "note": "Between 3rd and 4th near Chestnut"
+    },
+    "Cresson's Alley": {
+      "latitude": 39.951,
+      "longitude": -75.1442,
+      "note": "Near 2nd and Market"
+    },
+    "Greenleaf's Alley": {
+      "latitude": 39.948,
+      "longitude": -75.1432,
+      "note": "Between Front and 2nd near Walnut"
+    },
+    "Scheibell's Alley": {
+      "latitude": 39.947,
+      "longitude": -75.1452,
+      "note": "Between 2nd and 3rd near Walnut"
+    },
+    "Stamper's Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1477,
+      "note": "Between 3rd and 4th near Chestnut"
+    },
+    "Steinmetz's Alley": {
+      "latitude": 39.951,
+      "longitude": -75.1482,
+      "note": "Between 4th and 5th near Market"
+    },
+    "Cannon's Alley": {
+      "latitude": 39.95,
+      "longitude": -75.1437,
+      "note": "Near 2nd and Market"
+    },
+    "Carter's Alley": {
+      "latitude": 39.9475,
+      "longitude": -75.1422,
+      "note": "Near Front and Walnut"
+    },
+    "Chancery Lane": {
+      "latitude": 39.95,
+      "longitude": -75.1452,
+      "note": "Between 2nd and 3rd near Market"
+    },
+    "Elbow Lane": {
+      "latitude": 39.9485,
+      "longitude": -75.1417,
+      "note": "Near Front and Chestnut"
+    },
+    "McCullough's Alley": {
+      "latitude": 39.952,
+      "longitude": -75.1462,
+      "note": "Between 3rd and 4th near Arch"
+    },
+    "North Alley": {
+      "latitude": 39.953,
+      "longitude": -75.1442,
+      "note": "Between 2nd and 3rd north of Arch"
+    },
+    "South Alley": {
+      "latitude": 39.942,
+      "longitude": -75.1447,
+      "note": "Between 2nd and 3rd south of Pine"
+    },
+    "Church Alley": {
+      "latitude": 39.9485,
+      "longitude": -75.1422,
+      "note": "Near Front and Chestnut"
+    },
+    "Sterling Alley": {
+      "latitude": 39.95,
+      "longitude": -75.1462,
+      "note": "Between 3rd and 4th near Market"
+    },
+    "Tallman's Alley": {
+      "latitude": 39.951,
+      "longitude": -75.1452,
+      "note": "Near 2nd and Market"
+    },
+    "Fearis' Alley": {
+      "latitude": 39.947,
+      "longitude": -75.1467,
+      "note": "Between 3rd and 4th near Walnut"
+    },
+    "Hoffman's Alley": {
+      "latitude": 39.95,
+      "longitude": -75.1432,
+      "note": "Near 2nd and Market"
+    },
+    "Lownes' Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1452,
+      "note": "Between 2nd and 3rd near Chestnut"
+    },
+    "Petticoat Alley": {
+      "latitude": 39.951,
+      "longitude": -75.1432,
+      "note": "Near 2nd and Market"
+    },
+    "Patton's Alley": {
+      "latitude": 39.948,
+      "longitude": -75.1447,
+      "note": "Near 2nd and Walnut"
+    },
+    "Shepherd's Alley": {
+      "latitude": 39.9495,
+      "longitude": -75.1472,
+      "note": "Between 3rd and 4th near Chestnut"
+    },
+    "Etris' Alley": {
+      "latitude": 39.9515,
+      "longitude": -75.1467,
+      "note": "Between 3rd and 4th near Arch"
+    },
+    "Groff's Alley": {
+      "latitude": 39.9475,
+      "longitude": -75.1437,
+      "note": "Near 2nd and Walnut"
+    },
+    "Wells' Alley": {
+      "latitude": 39.952,
+      "longitude": -75.1457,
+      "note": "Near 3rd and Arch"
+    },
+    "Baker's Alley": {
+      "latitude": 39.947,
+      "longitude": -75.1432,
+      "note": "Near Front and Walnut"
+    },
+    "Cauffman's Alley": {
+      "latitude": 39.951,
+      "longitude": -75.1427,
+      "note": "Near Front and Market"
+    },
+    "Willing's Alley": {
+      "latitude": 39.9475,
+      "longitude": -75.1417,
+      "note": "Near Front and Walnut"
+    },
+    "Biddle's Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1457,
+      "note": "Between 2nd and 3rd near Chestnut"
+    },
+    "Fetter Lane": {
+      "latitude": 39.9485,
+      "longitude": -75.1482,
+      "note": "Between 4th and 5th near Chestnut"
+    },
+    "Button-wood Lane": {
+      "latitude": 39.958,
+      "longitude": -75.1462,
+      "note": "Near 3rd and Callowhill"
+    },
+    "Long Lane": {
+      "latitude": 39.954,
+      "longitude": -75.1472,
+      "note": "Between 3rd and 4th near Race"
+    },
+    "Poplar Lane": {
+      "latitude": 39.9605,
+      "longitude": -75.1457,
+      "note": "Between 2nd and 3rd north of Vine"
+    },
+    "Hickory Lane": {
+      "latitude": 39.9425,
+      "longitude": -75.1457,
+      "note": "Near 2nd and Pine"
+    },
+    "Black Alley": {
+      "latitude": 39.949,
+      "longitude": -75.1432,
+      "note": "Near 2nd and Chestnut"
+    },
+    "Rose Alley": {
+      "latitude": 39.95,
+      "longitude": -75.1447,
+      "note": "Near 2nd and Market"
+    }
   },
-
   "courts": {
-    "Letitia Court": {"latitude": 39.9530, "longitude": -75.1422, "note": "Between Front and 2nd near Market"},
-    "Emlen's Court": {"latitude": 39.9505, "longitude": -75.1455, "note": "Between 2nd and 3rd near Chestnut"},
-    "Laurel Court": {"latitude": 39.9510, "longitude": -75.1445, "note": "Near 2nd and Chestnut"},
-    "Williams & West's Court": {"latitude": 39.9500, "longitude": -75.1465, "note": "Between 3rd and 4th near Walnut"},
-    "Brooke Court": {"latitude": 39.9495, "longitude": -75.1470, "note": "Between 3rd and 4th near Walnut"},
-    "Drinker's Court": {"latitude": 39.9530, "longitude": -75.1445, "note": "Near 2nd and Market"},
-    "Mulberry Court": {"latitude": 39.9545, "longitude": -75.1450, "note": "Near 2nd and Arch"},
-    "Rawlinson Court": {"latitude": 39.9510, "longitude": -75.1450, "note": "Near 2nd and Chestnut"},
-    "Franklin Court": {"latitude": 39.9510, "longitude": -75.1475, "note": "Between 3rd and 4th near Chestnut"},
-    "Jackson's Court": {"latitude": 39.9495, "longitude": -75.1460, "note": "Between 2nd and 3rd near Walnut"},
-    "Styles' Court": {"latitude": 39.9520, "longitude": -75.1480, "note": "Between 3rd and 4th near Market"}
+    "Letitia Court": {
+      "latitude": 39.951,
+      "longitude": -75.1414,
+      "note": "Between Front and 2nd near Market"
+    },
+    "Emlen's Court": {
+      "latitude": 39.9485,
+      "longitude": -75.1447,
+      "note": "Between 2nd and 3rd near Chestnut"
+    },
+    "Laurel Court": {
+      "latitude": 39.949,
+      "longitude": -75.1437,
+      "note": "Near 2nd and Chestnut"
+    },
+    "Williams & West's Court": {
+      "latitude": 39.948,
+      "longitude": -75.1457,
+      "note": "Between 3rd and 4th near Walnut"
+    },
+    "Brooke Court": {
+      "latitude": 39.9475,
+      "longitude": -75.1462,
+      "note": "Between 3rd and 4th near Walnut"
+    },
+    "Drinker's Court": {
+      "latitude": 39.951,
+      "longitude": -75.1437,
+      "note": "Near 2nd and Market"
+    },
+    "Mulberry Court": {
+      "latitude": 39.9525,
+      "longitude": -75.1442,
+      "note": "Near 2nd and Arch"
+    },
+    "Rawlinson Court": {
+      "latitude": 39.949,
+      "longitude": -75.1442,
+      "note": "Near 2nd and Chestnut"
+    },
+    "Franklin Court": {
+      "latitude": 39.949,
+      "longitude": -75.1467,
+      "note": "Between 3rd and 4th near Chestnut"
+    },
+    "Jackson's Court": {
+      "latitude": 39.9475,
+      "longitude": -75.1452,
+      "note": "Between 2nd and 3rd near Walnut"
+    },
+    "Styles' Court": {
+      "latitude": 39.95,
+      "longitude": -75.1472,
+      "note": "Between 3rd and 4th near Market"
+    }
   },
-
   "special": {
-    "S. wharves": {"latitude": 39.9440, "longitude": -75.1390, "note": "Southern wharves along Delaware"},
-    "Walnut Street Wharf": {"latitude": 39.9485, "longitude": -75.1390, "note": "Walnut Street at the Delaware"},
-    "Pringle's wharf": {"latitude": 39.9500, "longitude": -75.1390, "note": "Wharf near Chestnut Street"},
-    "N. wharves": {"latitude": 39.9550, "longitude": -75.1390, "note": "Northern wharves along Delaware"},
-    "N. Wharves": {"latitude": 39.9550, "longitude": -75.1390, "note": "Northern wharves along Delaware"},
-    "S. Wharves": {"latitude": 39.9440, "longitude": -75.1390, "note": "Southern wharves along Delaware"},
-    "Cowperthwaite's wharf": {"latitude": 39.9510, "longitude": -75.1390, "note": "Wharf near Chestnut Street"},
-    "Cuthbert's wharf": {"latitude": 39.9520, "longitude": -75.1390, "note": "Wharf near Market Street"},
-    "Bright's wharf": {"latitude": 39.9530, "longitude": -75.1390, "note": "Wharf north of Market"},
-    "Crooked Billet wharf": {"latitude": 39.9540, "longitude": -75.1390, "note": "Wharf near Arch Street"},
-    "John Britton's wharf": {"latitude": 39.9510, "longitude": -75.1390, "note": "Wharf near Chestnut"},
-    "Walnut Street wharf": {"latitude": 39.9485, "longitude": -75.1390, "note": "Walnut Street at Delaware"},
-    "Vine St. Wharf": {"latitude": 39.9585, "longitude": -75.1390, "note": "Vine Street at Delaware"}
+    "S. wharves": {
+      "latitude": 39.942,
+      "longitude": -75.1385,
+      "note": "Southern wharves along Delaware"
+    },
+    "Walnut Street Wharf": {
+      "latitude": 39.9465,
+      "longitude": -75.1385,
+      "note": "Walnut Street at the Delaware"
+    },
+    "Pringle's wharf": {
+      "latitude": 39.948,
+      "longitude": -75.1385,
+      "note": "Wharf near Chestnut Street"
+    },
+    "N. wharves": {
+      "latitude": 39.953,
+      "longitude": -75.1385,
+      "note": "Northern wharves along Delaware"
+    },
+    "N. Wharves": {
+      "latitude": 39.953,
+      "longitude": -75.1385,
+      "note": "Northern wharves along Delaware"
+    },
+    "S. Wharves": {
+      "latitude": 39.942,
+      "longitude": -75.1385,
+      "note": "Southern wharves along Delaware"
+    },
+    "Cowperthwaite's wharf": {
+      "latitude": 39.949,
+      "longitude": -75.1385,
+      "note": "Wharf near Chestnut Street"
+    },
+    "Cuthbert's wharf": {
+      "latitude": 39.95,
+      "longitude": -75.1385,
+      "note": "Wharf near Market Street"
+    },
+    "Bright's wharf": {
+      "latitude": 39.951,
+      "longitude": -75.1385,
+      "note": "Wharf north of Market"
+    },
+    "Crooked Billet wharf": {
+      "latitude": 39.952,
+      "longitude": -75.1385,
+      "note": "Wharf near Arch Street"
+    },
+    "John Britton's wharf": {
+      "latitude": 39.949,
+      "longitude": -75.1385,
+      "note": "Wharf near Chestnut"
+    },
+    "Walnut Street wharf": {
+      "latitude": 39.9465,
+      "longitude": -75.1385,
+      "note": "Walnut Street at Delaware"
+    },
+    "Vine St. Wharf": {
+      "latitude": 39.9565,
+      "longitude": -75.1385,
+      "note": "Vine Street at Delaware"
+    }
   }
 }

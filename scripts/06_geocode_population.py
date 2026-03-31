@@ -68,24 +68,27 @@ def get_flight_probability(occupation: str, lng: float) -> float:
     occ = occupation.lower().strip()
 
     # Base probability by occupation tier
+    # Tuned so that at 43% flight (peak), wealthy areas are visibly empty
+    # and working-class areas remain visibly populated
     if occ in HIGH_FLIGHT:
-        base = 0.85
+        base = 0.92
     elif occ in MEDIUM_HIGH_FLIGHT:
-        base = 0.60
+        base = 0.72
     elif occ in MEDIUM_FLIGHT:
-        base = 0.40
+        base = 0.50
     elif occ in LOW_FLIGHT:
-        base = 0.18
+        base = 0.15
     elif occ == "":
-        base = 0.35
+        base = 0.45
     else:
-        base = 0.40
+        base = 0.48
 
     # Location modifier: wealthier west, poorer east
+    # Stronger modifier to create visible geographic contrast
     if lng < -75.149:  # West of 4th Street
-        base *= 1.2
+        base *= 1.3
     elif lng > -75.143:  # East of 2nd Street
-        base *= 0.8
+        base *= 0.7
 
     return max(0.0, min(1.0, base))
 
