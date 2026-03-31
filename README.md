@@ -2,6 +2,10 @@
 
 A structured, machine-readable dataset of the 1793 Philadelphia yellow fever epidemic, synthesizing multiple primary sources including Mathew Carey's death list and the 1791 Biddle Directory.
 
+**[View the interactive map](https://alma-raya-studio.github.io/philadelphia-1793/visualization/)**
+
+![Time-animated visualization of the 1793 Philadelphia yellow fever epidemic, showing deaths accumulating across the city week by week](visualization/epidemic.gif)
+
 ## What This Is
 
 In the fall of 1793, yellow fever killed roughly 5,000 people in Philadelphia, then the capital of the United States, out of a population of about 45,000. Publisher Mathew Carey documented the crisis in *A Short Account of the Malignant Fever, Lately Prevalent in Philadelphia* (4th edition, January 1794), which included a 42-page list of the dead on pages 121-159.
@@ -162,8 +166,6 @@ families = df[df["additional_persons"] != ""]
 ```
 
 ## Interactive Map
-
-![Epidemic visualization showing geocoded deaths in Philadelphia, 1793](visualization/screenshot.png)
 
 An interactive visualization of the epidemic is available in `visualization/index.html`. Open it in a browser to see geocoded deaths plotted on a map of Philadelphia with a time-animated slider showing the epidemic's progression week by week.
 
