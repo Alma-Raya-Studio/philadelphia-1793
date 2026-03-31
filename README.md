@@ -197,4 +197,4 @@ And the original source:
 ## License
 
 - **Data** (`data/` directory): [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
-- **Code** (`scripts/` directory): [MIT](LICENSE)
+- **Code** (`scripts/`, `visualization/`): [MIT](LICENSE)
