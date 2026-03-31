@@ -136,6 +136,9 @@ python scripts/03_parse_directory.py
 
 # Cross-reference for addresses
 python scripts/04_match_addresses.py
+
+# Geocode addresses to lat/lng
+python scripts/05_geocode_addresses.py
 ```
 
 ```python
@@ -157,6 +160,20 @@ carpenters = df[df["occupation"].str.contains("carpenter", case=False, na=False)
 # Entries with family members noted
 families = df[df["additional_persons"] != ""]
 ```
+
+## Interactive Map
+
+![Epidemic visualization showing geocoded deaths in Philadelphia, 1793](visualization/screenshot.png)
+
+An interactive visualization of the epidemic is available in `visualization/index.html`. Open it in a browser to see geocoded deaths plotted on a map of Philadelphia with a time-animated slider showing the epidemic's progression week by week.
+
+The visualization shows 662 deaths that could be geocoded by cross-referencing Carey's death list against the 1791 Biddle Directory. This represents approximately 16% of total documented deaths. The remaining 84% could not be plotted because the victims - disproportionately women, children, servants, free Black Philadelphians, and recent immigrants - did not appear in the directory.
+
+### Geocoded Dataset
+
+`data/carey_death_list_geocoded.csv` extends the enriched dataset with latitude and longitude coordinates. Addresses from the 1791 Biddle Directory were mapped from historical street names to their modern equivalents (e.g., High Street to Market Street, Sassafras to Race Street) and geocoded to approximate coordinates within Philadelphia's 1790s street grid.
+
+See `data/street_name_mapping.json` for the complete historical-to-modern street name mapping.
 
 ## How to Contribute
 

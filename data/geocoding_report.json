@@ -1,0 +1,12 @@
+{
+  "total_entries": 4229,
+  "entries_with_address": 662,
+  "successfully_geocoded": 662,
+  "failed": 0,
+  "geocode_rate": 100.0,
+  "by_method": {
+    "grid_interpolation": 582,
+    "alley_lookup": 80
+  },
+  "failed_addresses": []
+}
