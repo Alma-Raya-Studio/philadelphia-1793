@@ -89,6 +89,13 @@ The 1791 Biddle Directory file (`phil1791.xls`) was obtained from the [Universit
 
 SHA-256: `b1522e3d137cc041c54a7ec13d354de7d875a91b0f12dbea786951d5d6ffd42d`
 
+### Wealth Data
+**Billy G. Smith, "1789 TAX LIST OF PHILADELPHIA'S 11 WARDS."** Magazine of Early American Datasets (MEAD), University of Pennsylvania Libraries.
+
+An 80% random sample of the 1789 Philadelphia Provincial Tax List, recording assessed property values by ward for 3,176 taxpayers. The suburbs of Northern Liberties and Southwark are not included.
+
+Source: [ScholarlyCommons, University of Pennsylvania](https://repository.upenn.edu/entities/dataset/c58ea7b3-7362-4f98-8854-13f72b54f434)
+
 ## Methodology
 
 ### Parsing
@@ -111,6 +118,20 @@ Death list entries are matched to the 1791 Biddle Directory using a tiered strat
 2. **Name only**: surname + first name (when only one person with that name exists in the directory)
 3. **Relationship**: for "wife/child of X" entries, look up X
 4. **Fuzzy**: surname match + fuzzy first name match (threshold: 85%)
+
+### Currency Conversion: Pennsylvania Pounds to 2026 USD
+
+The 1789 tax assessments are recorded in Pennsylvania pounds, a colonial/state currency distinct from both British pounds sterling and US dollars. The visualization converts these to approximate 2026 USD equivalents using a two-step process:
+
+1. **Pennsylvania pounds to 1789 US dollars**: The Pennsylvania pound traded at roughly 0.60 pounds sterling, and 1 pound sterling equaled approximately $4.44 in contemporary US dollars (per the Newton standard of 4s 6d per dollar). This gives 1 Pennsylvania pound approximately $2.67 in 1789 USD.
+
+2. **1789 USD to 2026 USD**: Using CPI-based inflation data from the Bureau of Labor Statistics (with pre-1913 data from Robert Sahr, Oregon State University, via the American Antiquarian Society), $1 in 1789 is equivalent to approximately $37.13 in 2026.
+
+Combined: **1 Pennsylvania pound (1789) is approximately $100 in 2026 USD.**
+
+This is a rough approximation. There is no single correct way to compare purchasing power across 237 years - economists disagree on methodology, and the basket of goods available in 1789 was fundamentally different from today. The conversion is intended to give modern readers an intuitive sense of relative wealth and inequality, not a precise economic equivalence.
+
+Sources: [MeasuringWorth.com](https://www.measuringworth.com/calculators/exchange/), [OfficialData.org CPI Calculator](https://www.officialdata.org/us/inflation/1789), [Wikipedia: Pennsylvania pound](https://en.wikipedia.org/wiki/Pennsylvania_pound), [EH.net: Money in the American Colonies](https://eh.net/encyclopedia/money-in-the-american-colonies/)
 
 ## Known Limitations
 
