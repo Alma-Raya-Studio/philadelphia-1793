@@ -119,6 +119,16 @@ Death list entries are matched to the 1791 Biddle Directory using a tiered strat
 3. **Relationship**: for "wife/child of X" entries, look up X
 4. **Fuzzy**: surname match + fuzzy first name match (threshold: 85%)
 
+### Geocoding
+
+Addresses from the 1791 Biddle Directory are geocoded to latitude/longitude coordinates using a two-tier approach:
+
+1. **Nominatim anchor points**: For each unique street name, two reference addresses are geocoded via the [OpenStreetMap Nominatim API](https://nominatim.openstreetmap.org/) with a bounding box constraint to Old City Philadelphia. This produces real-world coordinates for 45 streets. House numbers are then interpolated along the line between these reference points. See `data/street_anchors.json` for the full set of anchor coordinates.
+
+2. **Fallback grid interpolation**: For alleys, courts, lanes, and streets that Nominatim cannot resolve (names that no longer exist in the modern city), coordinates are assigned from a manually compiled lookup table in `data/street_name_mapping.json`, based on historical maps and known locations.
+
+Ward boundaries for the wealth choropleth layer are also aligned to Nominatim-derived street coordinates so they match the basemap.
+
 ### Currency Conversion: Pennsylvania Pounds to 2026 USD
 
 The 1789 tax assessments are recorded in Pennsylvania pounds, a colonial/state currency distinct from both British pounds sterling and US dollars. The visualization converts these to approximate 2026 USD equivalents using a two-step process:
