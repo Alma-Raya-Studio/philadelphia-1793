@@ -5,15 +5,14 @@
     "author": "Billy G. Smith",
     "repository": "https://repository.upenn.edu/entities/dataset/c58ea7b3-7362-4f98-8854-13f72b54f434",
     "license": "CC-BY-4.0",
-    "note": "Ward 9 (South Mulberry) is missing from the sample. Suburbs of Northern Liberties and Southwark are not included.",
-    "usd_conversion": "1 Pennsylvania pound (1789) ≈ $100 USD (2026). Based on PA pound to sterling exchange rate (~0.60) and CPI inflation 1789-2026 (~37x)."
+    "note": "Ward 9 (South Mulberry) is missing from the sample. Suburbs of Northern Liberties and Southwark are not included."
   },
   "features": [
     {
       "type": "Feature",
       "properties": {
         "ward": 1,
-        "name": "Upper Delaware",
+        "name": "Chestnut",
         "side": "east",
         "count": 119,
         "median": 43.0,
@@ -22,10 +21,7 @@
         "p25": 16.5,
         "p75": 214.0,
         "max": 3154,
-        "pct_zero": 22.7,
-        "median_usd": 4300,
-        "mean_usd": 29939,
-        "max_usd": 315400
+        "pct_zero": 22.7
       },
       "geometry": {
         "type": "Polygon",
@@ -33,23 +29,23 @@
           [
             [
               -75.1408,
-              39.9544
+              39.9486
             ],
             [
               -75.1408,
-              39.9561
+              39.9506
             ],
             [
               -75.1473,
-              39.9561
+              39.9506
             ],
             [
               -75.1473,
-              39.9544
+              39.9486
             ],
             [
               -75.1408,
-              39.9544
+              39.9486
             ]
           ]
         ]
@@ -59,7 +55,7 @@
       "type": "Feature",
       "properties": {
         "ward": 2,
-        "name": "Lower Delaware",
+        "name": "Dock",
         "side": "east",
         "count": 337,
         "median": 30.0,
@@ -68,10 +64,7 @@
         "p25": 15.0,
         "p75": 258.0,
         "max": 9260,
-        "pct_zero": 13.4,
-        "median_usd": 3000,
-        "mean_usd": 39430,
-        "max_usd": 926000
+        "pct_zero": 13.4
       },
       "geometry": {
         "type": "Polygon",
@@ -79,23 +72,23 @@
           [
             [
               -75.1408,
-              39.9535
+              39.945
             ],
             [
               -75.1408,
-              39.9544
+              39.9467
             ],
             [
               -75.1473,
-              39.9544
+              39.9467
             ],
             [
               -75.1473,
-              39.9535
+              39.945
             ],
             [
               -75.1408,
-              39.9535
+              39.945
             ]
           ]
         ]
@@ -114,10 +107,7 @@
         "p25": 25.0,
         "p75": 710.0,
         "max": 3265,
-        "pct_zero": 23.5,
-        "median_usd": 5000,
-        "mean_usd": 43040,
-        "max_usd": 326500
+        "pct_zero": 23.5
       },
       "geometry": {
         "type": "Polygon",
@@ -151,7 +141,7 @@
       "type": "Feature",
       "properties": {
         "ward": 4,
-        "name": "Chestnut",
+        "name": "Lower Delaware",
         "side": "east",
         "count": 128,
         "median": 25.0,
@@ -160,10 +150,7 @@
         "p25": 0.0,
         "p75": 325.0,
         "max": 3327,
-        "pct_zero": 32.8,
-        "median_usd": 2500,
-        "mean_usd": 26510,
-        "max_usd": 332700
+        "pct_zero": 32.8
       },
       "geometry": {
         "type": "Polygon",
@@ -171,23 +158,23 @@
           [
             [
               -75.1408,
-              39.9486
+              39.9535
             ],
             [
               -75.1408,
-              39.9506
+              39.9544
             ],
             [
               -75.1473,
-              39.9506
+              39.9544
             ],
             [
               -75.1473,
-              39.9486
+              39.9535
             ],
             [
               -75.1408,
-              39.9486
+              39.9535
             ]
           ]
         ]
@@ -197,8 +184,8 @@
       "type": "Feature",
       "properties": {
         "ward": 5,
-        "name": "Walnut",
-        "side": "east",
+        "name": "Middle",
+        "side": "west",
         "count": 317,
         "median": 45.0,
         "mean": 433.6,
@@ -206,34 +193,31 @@
         "p25": 10.0,
         "p75": 350.0,
         "max": 6185,
-        "pct_zero": 21.8,
-        "median_usd": 4500,
-        "mean_usd": 43360,
-        "max_usd": 618500
+        "pct_zero": 21.8
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -75.1408,
-              39.9467
-            ],
-            [
-              -75.1408,
-              39.9486
-            ],
-            [
               -75.1473,
               39.9486
             ],
             [
               -75.1473,
-              39.9467
+              39.9506
             ],
             [
-              -75.1408,
-              39.9467
+              -75.1565,
+              39.9506
+            ],
+            [
+              -75.1565,
+              39.9486
+            ],
+            [
+              -75.1473,
+              39.9486
             ]
           ]
         ]
@@ -243,8 +227,8 @@
       "type": "Feature",
       "properties": {
         "ward": 6,
-        "name": "Dock",
-        "side": "east",
+        "name": "Mulberry",
+        "side": "west",
         "count": 1124,
         "median": 30.0,
         "mean": 216.8,
@@ -252,34 +236,31 @@
         "p25": 20.0,
         "p75": 220.25,
         "max": 4015,
-        "pct_zero": 12.4,
-        "median_usd": 3000,
-        "mean_usd": 21680,
-        "max_usd": 401500
+        "pct_zero": 12.4
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -75.1408,
-              39.945
-            ],
-            [
-              -75.1408,
-              39.9467
+              -75.1473,
+              39.9535
             ],
             [
               -75.1473,
-              39.9467
+              39.9561
+            ],
+            [
+              -75.1565,
+              39.9561
+            ],
+            [
+              -75.1565,
+              39.9535
             ],
             [
               -75.1473,
-              39.945
-            ],
-            [
-              -75.1408,
-              39.945
+              39.9535
             ]
           ]
         ]
@@ -289,8 +270,8 @@
       "type": "Feature",
       "properties": {
         "ward": 7,
-        "name": "New Market",
-        "side": "east",
+        "name": "North",
+        "side": "west",
         "count": 523,
         "median": 50.0,
         "mean": 335.2,
@@ -298,34 +279,31 @@
         "p25": 25.0,
         "p75": 244.5,
         "max": 6224,
-        "pct_zero": 16.1,
-        "median_usd": 5000,
-        "mean_usd": 33520,
-        "max_usd": 622400
+        "pct_zero": 16.1
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -75.1408,
-              39.9395
-            ],
-            [
-              -75.1408,
-              39.945
+              -75.1473,
+              39.9506
             ],
             [
               -75.1473,
-              39.945
+              39.9535
+            ],
+            [
+              -75.1565,
+              39.9535
+            ],
+            [
+              -75.1565,
+              39.9506
             ],
             [
               -75.1473,
-              39.9395
-            ],
-            [
-              -75.1408,
-              39.9395
+              39.9506
             ]
           ]
         ]
@@ -335,7 +313,7 @@
       "type": "Feature",
       "properties": {
         "ward": 8,
-        "name": "North Mulberry",
+        "name": "South",
         "side": "west",
         "count": 126,
         "median": 119.0,
@@ -344,10 +322,7 @@
         "p25": 20.0,
         "p75": 447.5,
         "max": 7500,
-        "pct_zero": 19.8,
-        "median_usd": 11900,
-        "mean_usd": 53510,
-        "max_usd": 750000
+        "pct_zero": 19.8
       },
       "geometry": {
         "type": "Polygon",
@@ -355,23 +330,23 @@
           [
             [
               -75.1473,
-              39.9544
+              39.9395
             ],
             [
               -75.1473,
-              39.9561
+              39.9486
             ],
             [
               -75.1565,
-              39.9561
+              39.9486
             ],
             [
               -75.1565,
-              39.9544
+              39.9395
             ],
             [
               -75.1473,
-              39.9544
+              39.9395
             ]
           ]
         ]
@@ -381,8 +356,8 @@
       "type": "Feature",
       "properties": {
         "ward": 9,
-        "name": "South Mulberry",
-        "side": "west",
+        "name": "New Market",
+        "side": "east",
         "count": 0,
         "median": 0,
         "mean": 0,
@@ -390,34 +365,31 @@
         "p25": 0,
         "p75": 0,
         "max": 0,
-        "pct_zero": 0,
-        "median_usd": 0,
-        "mean_usd": 0,
-        "max_usd": 0
+        "pct_zero": 0
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -75.1473,
-              39.9535
+              -75.1408,
+              39.9395
+            ],
+            [
+              -75.1408,
+              39.945
             ],
             [
               -75.1473,
-              39.9544
-            ],
-            [
-              -75.1565,
-              39.9544
-            ],
-            [
-              -75.1565,
-              39.9535
+              39.945
             ],
             [
               -75.1473,
-              39.9535
+              39.9395
+            ],
+            [
+              -75.1408,
+              39.9395
             ]
           ]
         ]
@@ -427,8 +399,8 @@
       "type": "Feature",
       "properties": {
         "ward": 10,
-        "name": "North",
-        "side": "west",
+        "name": "Upper Delaware",
+        "side": "east",
         "count": 255,
         "median": 30.0,
         "mean": 204.6,
@@ -436,34 +408,31 @@
         "p25": 10.0,
         "p75": 100.0,
         "max": 5535,
-        "pct_zero": 23.9,
-        "median_usd": 3000,
-        "mean_usd": 20460,
-        "max_usd": 553500
+        "pct_zero": 23.9
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -75.1473,
-              39.9506
+              -75.1408,
+              39.9544
+            ],
+            [
+              -75.1408,
+              39.9561
             ],
             [
               -75.1473,
-              39.9535
-            ],
-            [
-              -75.1565,
-              39.9535
-            ],
-            [
-              -75.1565,
-              39.9506
+              39.9561
             ],
             [
               -75.1473,
-              39.9506
+              39.9544
+            ],
+            [
+              -75.1408,
+              39.9544
             ]
           ]
         ]
@@ -473,8 +442,8 @@
       "type": "Feature",
       "properties": {
         "ward": 11,
-        "name": "Middle",
-        "side": "west",
+        "name": "Walnut",
+        "side": "east",
         "count": 98,
         "median": 50.0,
         "mean": 302.6,
@@ -482,34 +451,31 @@
         "p25": 0.0,
         "p75": 164.0,
         "max": 3800,
-        "pct_zero": 27.6,
-        "median_usd": 5000,
-        "mean_usd": 30260,
-        "max_usd": 380000
+        "pct_zero": 27.6
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -75.1473,
-              39.9486
+              -75.1408,
+              39.9467
             ],
             [
-              -75.1473,
-              39.9506
-            ],
-            [
-              -75.1565,
-              39.9506
-            ],
-            [
-              -75.1565,
+              -75.1408,
               39.9486
             ],
             [
               -75.1473,
               39.9486
+            ],
+            [
+              -75.1473,
+              39.9467
+            ],
+            [
+              -75.1408,
+              39.9467
             ]
           ]
         ]

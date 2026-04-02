@@ -31,29 +31,49 @@ OUTPUT = ROOT / "data" / "ward_wealth.json"
 # Ward names and boundaries from the Library Company of Philadelphia
 # https://librarycompany.org/pos/wards.htm
 # Boundaries defined by street intersections using Nominatim-derived coordinates
+# Ward numbering from the codebook in sources/1789_tax_list_codebook.doc:
+# 01=Chestnut, 02=Dock, 03=High St, 04=Lower Delaware, 05=Middle,
+# 06=Mulberry, 07=North, 08=South, 10=Upper Delaware, 11=Walnut
+# Ward 09 (New Market) is missing from the sample.
+
+# Boundary coordinates calibrated against Nominatim/basemap
+VINE = 39.9561
+RACE = 39.9544
+ARCH = 39.9535
+MARKET = 39.9506
+CHESTNUT = 39.9486
+WALNUT = 39.9467
+SPRUCE = 39.9450
+SOUTH = 39.9395
+FOURTH = -75.1473
+RIVER = -75.1408
+WEST = -75.1565
+
 WARD_INFO = {
-    1: {"name": "Upper Delaware", "side": "east",
-        "north": 39.9565, "south": 39.9540, "west": -75.1479, "east": -75.1398},
-    2: {"name": "Lower Delaware", "side": "east",
-        "north": 39.9540, "south": 39.9521, "west": -75.1479, "east": -75.1398},
-    3: {"name": "High Street", "side": "east",
-        "north": 39.9521, "south": 39.9508, "west": -75.1479, "east": -75.1398},
-    4: {"name": "Chestnut", "side": "east",
-        "north": 39.9508, "south": 39.9484, "west": -75.1479, "east": -75.1398},
-    5: {"name": "Walnut", "side": "east",
-        "north": 39.9484, "south": 39.9465, "west": -75.1479, "east": -75.1398},
-    6: {"name": "Dock", "side": "east",
-        "north": 39.9465, "south": 39.9445, "west": -75.1479, "east": -75.1398},
-    7: {"name": "New Market", "side": "east",
-        "north": 39.9445, "south": 39.9385, "west": -75.1479, "east": -75.1398},
-    8: {"name": "North Mulberry", "side": "west",
-        "north": 39.9565, "south": 39.9540, "west": -75.1565, "east": -75.1479},
-    9: {"name": "South Mulberry", "side": "west",
-        "north": 39.9540, "south": 39.9521, "west": -75.1565, "east": -75.1479},
-    10: {"name": "North", "side": "west",
-         "north": 39.9521, "south": 39.9508, "west": -75.1565, "east": -75.1479},
-    11: {"name": "Middle", "side": "west",
-         "north": 39.9508, "south": 39.9484, "west": -75.1565, "east": -75.1479},
+    # Eastern wards (Delaware River to 4th Street)
+    10: {"name": "Upper Delaware", "side": "east",
+         "north": VINE, "south": RACE, "west": FOURTH, "east": RIVER},
+    4:  {"name": "Lower Delaware", "side": "east",
+         "north": RACE, "south": ARCH, "west": FOURTH, "east": RIVER},
+    3:  {"name": "High Street", "side": "east",
+         "north": ARCH, "south": MARKET, "west": FOURTH, "east": RIVER},
+    1:  {"name": "Chestnut", "side": "east",
+         "north": MARKET, "south": CHESTNUT, "west": FOURTH, "east": RIVER},
+    11: {"name": "Walnut", "side": "east",
+         "north": CHESTNUT, "south": WALNUT, "west": FOURTH, "east": RIVER},
+    2:  {"name": "Dock", "side": "east",
+         "north": WALNUT, "south": SPRUCE, "west": FOURTH, "east": RIVER},
+    9:  {"name": "New Market", "side": "east",
+         "north": SPRUCE, "south": SOUTH, "west": FOURTH, "east": RIVER},
+    # Western wards (4th Street to city limit)
+    6:  {"name": "Mulberry", "side": "west",
+         "north": VINE, "south": ARCH, "west": WEST, "east": FOURTH},
+    7:  {"name": "North", "side": "west",
+         "north": ARCH, "south": MARKET, "west": WEST, "east": FOURTH},
+    5:  {"name": "Middle", "side": "west",
+         "north": MARKET, "south": CHESTNUT, "west": WEST, "east": FOURTH},
+    8:  {"name": "South", "side": "west",
+         "north": CHESTNUT, "south": SOUTH, "west": WEST, "east": FOURTH},
 }
 
 
